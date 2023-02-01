@@ -23,7 +23,7 @@ namespace ex_1
                 Console.Write($"{i}°:");
                 a = Convert.ToInt32(Console.ReadLine());
 
-                if (i == 1 || a > m) m = a;
+                if (a > m || i == 1) m = a;
                 t = t + a;
 
             }
