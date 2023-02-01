@@ -1,4 +1,4 @@
- using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace ex_1
     {
         static void Main()
         {
-            int a, m=0, t=0, i; //a=numero atual m=maior numero t=total i=indice
+            int a, m=int.MinValue, t=0, i; //a=numero atual m=maior numero t=total i=indice
 
             Console.WriteLine("digite 5 numeros");
 
@@ -23,7 +23,7 @@ namespace ex_1
                 Console.Write($"{i}°:");
                 a = Convert.ToInt32(Console.ReadLine());
 
-                if (a > m || i == 1) m = a;
+                if (a > m) m = a;
                 t = t + a;
 
             }
