@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,13 +17,16 @@ namespace ex_1
 
             Console.WriteLine("digite 5 numeros");
 
+
             for (i = 1; i < 6; i++)
             {
                 Console.Write($"{i}°:");
                 a = Convert.ToInt32(Console.ReadLine());
 
+                if (i == 1) m = a;
                 if (a > m) m = a;
                 t = t + a;
+
             }
             Console.WriteLine($"o maior numero eh: {m}\na soma de todos eh: {t}");
 
